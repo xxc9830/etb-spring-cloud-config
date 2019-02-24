@@ -1,4 +1,4 @@
-server:
+﻿server:
   port: 9527
 spring:
   application:
@@ -7,5 +7,9 @@ zuul:
   ignored-services: "*"
   prefix: "/services"
   routes: #路由的配置
-    user.serviceId: easytobuy-plat
-    user.path: /plat/**
+    plat.serviceId: easytobuy-plat
+    plat.path: /plat/**
+    product.serviceId: easytobuy-product
+    product.path: /product/**
+    common.serviceId: easytobuy-common
+    common.path: /common/**
